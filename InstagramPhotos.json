@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "bf2019c8-8575-47c3-a441-dacb59d435e7",
+		"name": "Instagram Photos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12101986",
+		"_collection_link": "https://grey-comet-90338.postman.co/workspace/BeHype~596251dd-9c77-4ac4-8d9a-f9da24055760/collection/12101986-bf2019c8-8575-47c3-a441-dacb59d435e7?action=share&creator=12101986&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "/pictures/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/pictures/?username=icecube&count=10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"pictures",
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "icecube"
+						},
+						{
+							"key": "count",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
